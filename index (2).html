@@ -1,0 +1,186 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    body {
+        background: url(https://images4.alphacoders.com/936/thumb-1920-936378.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: sans-serif;
+        margin: 0;
+        margin-top: 45px;
+      }
+      
+      form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          justify-content: center;
+          align-items: center;
+          margin-inline: auto;
+          background-color: rgba(10, 10, 10, 0.925);
+          border: 5px solid rgb(79, 111, 179);
+          border-radius: 30px;
+          max-width: 350px;
+          padding: 35px;
+      }
+      
+      p{
+        color: #fffffffd;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      div {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+      }
+      
+      label {
+        font-size: x-large;
+        color: #ffffff;
+        /* margin-left: 10px; */
+        /* border-bottom: 5px solid rgb(79, 111, 179); */
+      
+      }
+      
+      input {
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid rgb(79, 111, 179);
+        /* margin-left: 10px; */
+        /* margin-bottom: 10px; */
+        border-radius: 5px;
+        padding: 5px;
+      }
+      
+      input[type="submit"] {
+        background-color: rgb(79, 111, 179);
+        color: #ffffff;
+        border: none;
+        margin-top: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: large;
+      }
+      
+      input:-webkit-autofill {
+        -webkit-background-clip: text;
+      }
+      
+      input:-webkit-autofill {
+        -webkit-text-fill-color: white !important;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: blue;
+        transition: 0.7s;
+      }
+      
+      input[type="submit"]:active {
+        background-color: green;
+        transition: 0.2s;
+      }
+      
+      .flex {
+          display: flex;
+      }
+      
+      .row {
+          flex-direction: row;
+      }
+      
+      .gap-12 {
+          gap: 12px;
+      }
+      
+      .w-100 {
+          width: 100%;
+      }
+      
+      .w-50 {
+          width: 50%;
+      }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario web</title>
+</head>
+<body>
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    
+    <input type=hidden name="oid" value="00DDp000001yoZD">
+    <input type=hidden name="retURL" value="https://winguweb.org">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="appgamemusicvideo@gmail.com">                                    -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <div class="flex row gap-12 w-100">
+        <div class="w-50">
+            <label for="first_name">First Name</label>
+            <input id="first_name" maxlength="40" name="first_name" type="text" />
+        </div>
+        
+        <div class="w-50">
+            <label for="last_name">Last Name</label>
+            <input id="last_name" maxlength="80" name="last_name" type="text" />
+        </div>
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" type="email" />
+    </div>
+    
+    <div>
+        <label for="company">Company</label>
+        <input id="company" maxlength="40" name="company" type="text" />
+    </div>
+    
+    <div>
+        <label for="city">City</label>
+        <input id="city" maxlength="40" name="city" type="text" />
+    </div>
+    
+    <div>
+        <label for="country">Country</label>
+        <input id="country" maxlength="40" name="country" type="text" />
+    </div>
+    
+    <div>
+        <label for="phone">Phone</label>
+        <input id="phone" maxlength="40" name="phone" type="text" />
+    </div>
+
+    <div>
+        <p>*Completa todos los campos para enviar correctamente</p>
+    </div>
+    
+    <input type="submit" name="submit">
+    
+    </form>
+    
+</body>
+</html>
